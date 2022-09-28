@@ -161,6 +161,8 @@ In order to carry out the tests, you need to have running the API locally and op
 
 
 
+
+```python
 # Go to the project file "yoyoEngTest"
 $python manage.py test
 
@@ -173,9 +175,6 @@ Ran 2 tests in 0.983s
 OK
 Destroying test database for alias 'default'...
 
+```
+Author: Evans Mwenda | 2022
 
-## Setup
-To run locally
-
-
-Author: Norberto Moreno | 2021
