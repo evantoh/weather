@@ -160,7 +160,7 @@ sending requests and comparing them with expected values.
 In order to carry out the tests, you need to have running the API locally and open another terminal.
 
 
-```python
+
 # Go to the project file "yoyoEngTest"
 $python manage.py test
 
@@ -176,3 +176,6 @@ Destroying test database for alias 'default'...
 
 ## Setup
 To run locally
+
+
+Author: Norberto Moreno | 2021
