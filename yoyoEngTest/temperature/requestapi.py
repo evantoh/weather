@@ -5,21 +5,19 @@ import statistics
 
 
 
-def getMaximumTemp(maximumValues):
+
+def getMaximumTemp(maximumValues): # fn to calculate maximum temperature
     return max(maximumValues)
 
-
-def getMinimumTemp(minimumValues):
+def getMinimumTemp(minimumValues): # fn to calculate minimum temperature
     return min(minimumValues)
 
-def getAverageTemp(minimumValues):
+def getAverageTemp(minimumValues): # fn to calculate average temperature
     avg = sum(minimumValues) / len(minimumValues)
-
     return avg
 
-def getMedianTemp(minimumValues):
+def getMedianTemp(minimumValues): # fn to calculate median temperature
     medianValue = statistics.median(minimumValues)
-
     return medianValue
 
 # def minMaxAveMedListfn(minimumValues):
@@ -41,7 +39,7 @@ def getMedianTemp(minimumValues):
 
 def get_weather(location, days):
     """ Function to handle the requests to
-        the 3rd API http://api.weatherapi.com/v1 ;
+        the 3rd API https://www.weatherapi.com/ ;
         Takes as arguments str "city" and "number_of_days",
         and returns the formatted dictionary
         "
@@ -50,7 +48,6 @@ def get_weather(location, days):
     url = f"http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={location}&days={days}&aqi=no&alerts=no"
     response = requests.get(url)  # Response object
 
-
     # looping through data returned after SuccessFul api call and handling exceptions
     try:
         forecastData=response.json()['forecast']['forecastday']
@@ -58,14 +55,12 @@ def get_weather(location, days):
         minValuesList = []
         aveValuesList = []
         for data in forecastData:
-            # get Maximum value based on parameters passed i.e location and number of days using key maxtemp_c
-            maxValuesList.append(data['day']['maxtemp_c'])
 
-            # get minimum value based on parameters passed i.e location and number of days using key mintemp_c
-            minValuesList.append(data['day']['mintemp_c'])
+            maxValuesList.append(data['day']['maxtemp_c']) # get Maximum value based on parameters passed i.e location and number of days using key maxtemp_c
 
-            # get average value based on parameters passed i.e location and number of days using key avgtemp_c
-            aveValuesList.append(data['day']['avgtemp_c'])
+            minValuesList.append(data['day']['mintemp_c']) # get minimum value based on parameters passed i.e location and number of days using key mintemp_c
+
+            aveValuesList.append(data['day']['avgtemp_c'])  # get average value based on parameters passed i.e location and number of days using key avgtemp_c
 
         getMaximumTemps = getMaximumTemp(maxValuesList)
         getMinimumTemps = getMinimumTemp(minValuesList)
