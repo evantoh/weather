@@ -131,7 +131,6 @@ ex:
 
 <img src="https://github.com/evantoh/weather/blob/main/images/url.png" width="700">
 
-
 > Closer view from the JSON response of the requested location and days.
 ex:
   >   http://127.0.0.1:8000/api/location/Nairobi/?days=10
@@ -140,8 +139,18 @@ ex:
 
 > if any error is generated ,you should receive an error message .
 ex:
+> 
 <img src="https://github.com/evantoh/weather/blob/main/images/errorMessage.png" width="700">
 
+> Expected results should be as follows .
+example for city=Nairobi and days=10:
+> 
+<img src="https://github.com/evantoh/weather/blob/main/images/Results.png" width="700">
+
+
+> example for city=London and days=9:
+> 
+<img src="" width="700">
 
 
 
