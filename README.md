@@ -9,7 +9,7 @@ This is an API built with Django Rest Framework, and allows to retrieve real tim
 
 The API support GET requests in the following endpoint: <strong> /api/locations/{city}/?days={number_of_days}</strong>.
 
-where the variable "City" is a string. Example: Nairobi, and the variable "Days" is the number of days to pass for forecasting
+where the variable "city" is a string. Example: London, and the variable "number_of_days" is the number of days  for forecasting e.g 10
 
 
 
