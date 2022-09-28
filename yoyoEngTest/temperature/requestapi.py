@@ -46,7 +46,6 @@ def get_weather(location, days):
         and returns the formatted dictionary
         "
     """
-    # print("env",os.environ)
     api_key = os.environ.get('WEATHER_SECRET_APIKEY')
     url = f"http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={location}&days={days}&aqi=no&alerts=no"
     response = requests.get(url)  # Response object
