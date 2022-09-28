@@ -8,5 +8,5 @@ class WeatherSerializer(serializers.Serializer):
     # city = serializers.CharField(max_length=20)
     # country = serializers.CharField(max_length=2)
 
-    location = serializers.CharField(max_length=20)
+    # location = serializers.CharField(max_length=20)
     days = serializers.CharField(max_length=2)

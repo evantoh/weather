@@ -9,8 +9,7 @@ media/
 
 # Environments
 .venv/
-idea/
-venv/
+.idea/
 
 # Django
 *.sqlite3

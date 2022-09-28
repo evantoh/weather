@@ -7,7 +7,7 @@
 ## Overview
 This is an API built with Django Rest Framework, and allows to retrieve real time weather data for any location acreoss cities from a third  party API called Open Weather (http://api.weatherapi.com/v1).
 
-The API support GET requests in the following endpoint: <strong> api/?location={City}&days={Days}</strong>.
+The API support GET requests in the following endpoint: <strong> /api/locations/{city}/?days={number_of_days}</strong>.
 
 where the variable "City" is a string. Example: Nairobi, and the variable "Days" is the number of days to pass for forecasting
 

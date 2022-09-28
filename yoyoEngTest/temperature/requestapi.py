@@ -26,17 +26,14 @@ def getMedianTemp(minimumValues):
 
 def get_weather(location, days):
     """ Function to handle the requests to
-        the 3rd API http://api.openweathermap.org ;
+        the 3rd API http://api.weatherapi.com/v1 ;
         Takes as arguments str "city" and "country",
-        and returns the formatted dictionary."
+        and returns the formatted dictionary
+        "
     """
     # print("env",os.environ)
-    # api_key = os.environ.get('WEATHER_SECRET_APIKEY')
-    api_key = "09e04c00833e472abbf123842222109"
-    # url = f"http://api.openweathermap.org/data/2.5/weather?q={city},{country}&appid={api_key}&mode=xml"  # 3rd API"api.openweathermap.org" URL
-
+    api_key = os.environ.get('WEATHER_SECRET_APIKEY')
     url = f"http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={location}&days={days}&aqi=no&alerts=no"
-
     response = requests.get(url)  # Response object
 
 

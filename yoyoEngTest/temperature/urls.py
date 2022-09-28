@@ -3,10 +3,7 @@ from temperature import views
 
 
 urlpatterns = [
-    path('api/', views.weather_detail),
+    # parameter City is only restricted to data type string
+    path('api/location/<str:city>/', views.weather_detail),# /api/locations/{city}/?days={number_of_days}
 
-    # path(
-    #     route = 'locations/<str:city>/', # /api/locations/{city}/?days={number_of_days}
-    #     view = views.weather_detail,
-    # )
 ]
