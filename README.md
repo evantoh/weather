@@ -1,6 +1,6 @@
 # weather
 # weather
-<img src="" width="300">
+<img src="https://github.com/evantoh/weather/blob/main/images/weather.jpeg" width="300">
 
 
 
