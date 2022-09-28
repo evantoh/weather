@@ -1,5 +1,4 @@
 # weather
-# weather
 <img src="https://github.com/evantoh/weather/blob/main/images/weather.jpeg" width="100%">
 
 
