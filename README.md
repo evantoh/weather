@@ -4,11 +4,11 @@
 
 
 ## Overview
-This is an API built with Django Rest Framework, and allows to retrieve real time weather data for any location acreoss cities from a third  party API called Open Weather (http://api.weatherapi.com/v1).
+This is an API built with Django Rest Framework, and allows to retrieve real time weather data for any location across cities from a third  party API called Open Weather (https://www.weatherapi.com/).
 
 The API support GET requests in the following endpoint: <strong> /api/locations/{city}/?days={number_of_days}</strong>.
 
-where the variable "city" is a string. Example: London, and the variable "number_of_days" is the number of days  for forecasting e.g 10
+where the variable "city" is a string. Example: Nairobi, and the variable "number_of_days" is the number of days to forecast e.g 10
 
 
 
@@ -28,7 +28,6 @@ This project uses the following Python dependencies:
 * asgiref==3.5.2
 * certifi==2022.9.24
 * charset-normalizer==2.1.1
-* Django==3.2
 * djangorestframework==3.12.4
 * idna==3.4
 * pytz==2022.2.1
@@ -149,8 +148,8 @@ example for city=Nairobi and days=10:
 
 
 > example for city=London and days=9:
-> 
-<img src="" width="700">
+ 
+<img src="https://github.com/evantoh/weather/blob/main/images/londonResults.png" width="700">
 
 
 
